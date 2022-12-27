@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #06533f;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nutcracker__container {
+  width: 300px;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nutcracker__container .head__container {
+  width: 100%;
+  position: relative;
+}
+.nutcracker__container .head__container .crown__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.nutcracker__container .head__container .crown__container .crown--red {
+  width: 180px;
+  height: 100px;
+  background: #e54322;
+  padding: 0 1.5rem;
+}
+.nutcracker__container .head__container .crown__container .crown--red .crown--red__decoration__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nutcracker__container .head__container .crown__container .crown--red .crown--red__decoration__container .crown--red__decoration:first-child,
+.nutcracker__container .head__container .crown__container .crown--red .crown--red__decoration__container .crown--red__decoration:last-child {
+  width: 20px;
+  height: 20px;
+  background: #fdb2d3;
+  border-radius: 50%;
+}
+.nutcracker__container .head__container .crown__container .crown--red .crown--red__decoration__container .crown--red__decoration {
+  width: 30px;
+  height: 30px;
+  background: #fdb2d3;
+  transform: rotate(45deg);
+}
+.nutcracker__container .head__container .crown__container .crown--gold {
+  width: 240px;
+  height: 70px;
+  background: #a47922;
+  padding: 2rem;
+}
+.nutcracker__container .head__container .crown__container .crown--gold .crown--gold__decoration__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nutcracker__container .head__container .crown__container .crown--gold .crown--gold__decoration__container .crown--gold__decoration {
+  width: 20px;
+  height: 20px;
+  background: #fbdeca;
+  border-radius: 50%;
+}
+.nutcracker__container .head__container .crown__container::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #fbdeca;
+  position: absolute;
+  border-radius: 50%;
+  top: -25px;
+}
+.nutcracker__container .head__container .hair__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.nutcracker__container .head__container .hair__container .hair {
+  background: #fbdeca;
+  width: 100%;
+  height: 90px;
+  border-radius: 100px;
+}
+.nutcracker__container .head__container .hair__container .hair::before {
+  content: "";
+  background: #fbdeca;
+  width: 340px;
+  height: 87px;
+  border-radius: 100px;
+  position: absolute;
+  top: 70%;
+  left: -20px;
+}
+.nutcracker__container .head__container .face__container {
+  width: 165px;
+  height: 150px;
+  background: #e8b8b1;
+  position: absolute;
+  left: 50%;
+  top: 170px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.nutcracker__container .head__container .face__container .eyes__container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+.nutcracker__container .head__container .face__container .eyes__container .eye {
+  width: 20px;
+  height: 20px;
+  background: #432624;
+  border-radius: 50%;
+  position: relative;
+}
+.nutcracker__container .head__container .face__container .eyes__container .eye::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 40px;
+  background: #fbdeca;
+  top: -20px;
+  left: -10px;
+}
+.nutcracker__container .head__container .face__container .eyes__container .eye::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background: #432624;
+  bottom: 0;
+  left: -5px;
+}
+.nutcracker__container .head__container .face__container .nose {
+  position: absolute;
+  top: 40%;
+  width: 15px;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #d7a49f;
+  transform: translateY(-50%);
+}
+.nutcracker__container .head__container .face__container .blush__container {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 45%;
+  padding: 0 1rem;
+}
+.nutcracker__container .head__container .face__container .blush__container .blush {
+  width: 40px;
+  height: 40px;
+  background: #eaa2a6;
+  border-radius: 50%;
+}
+.nutcracker__container .head__container .face__container .mustache__container {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  top: 75%;
+  padding: 0 1rem;
+}
+.nutcracker__container .head__container .face__container .mustache__container .mustache {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background: #fbdeca;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.nutcracker__container .body__container {
+  width: 100%;
+  position: relative;
+  top: 60px;
+  background: #a47922;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.nutcracker__container .body__container .arm {
+  width: 70px;
+  height: 200px;
+  background: #432624;
+  position: relative;
+}
+.nutcracker__container .body__container .arm::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  background: #fdb2d3;
+  left: -10px;
+  top: -5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.nutcracker__container .body__container .arm::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  background: #fdb2d3;
+  left: -10px;
+  bottom: -5px;
+  z-index: 99;
+}
+.nutcracker__container .body__container .arm .hand {
+  position: absolute;
+  bottom: -60px;
+  background: #e8b8b1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.nutcracker__container .body__container .body {
+  width: 160px;
+  height: 100%;
+  position: relative;
+}
+.nutcracker__container .body__container .body .cloth {
+  width: 60px;
+  height: 80px;
+  background: #432624;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.nutcracker__container .body__container .body .cloth .cloth__decoration__container {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: -30px;
+}
+.nutcracker__container .body__container .body .cloth .cloth__decoration__container .cloth__decoration {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+  background: #e54322;
+  border-radius: 50%;
+  position: relative;
+}
+.nutcracker__container .body__container .body .cloth .cloth__decoration__container .cloth__decoration::before {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: #e54322;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nutcracker__container .body__container .body .cloth .cloth__decoration__container .cloth__decoration::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e54322;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+.nutcracker__container .body__container .body .belt {
+  width: 160px;
+  height: 50px;
+  background: #e54322;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nutcracker__container .body__container .body .belt .belt__decoration {
+  width: 50px;
+  height: 50px;
+  outline: 10px solid #fbdeca;
+}
+.nutcracker__container .leg__container {
+  width: 160px;
+  position: relative;
+  top: 60px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.nutcracker__container .leg__container .leg {
+  width: 70px;
+  background: #432624;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nutcracker__container .leg__container .leg::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #a47922;
+  transform: translateX(-5px);
+}
+.nutcracker__container .leg__container .leg::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 80px;
+  height: 50px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: #a47922;
+  transform: translateX(-5px);
+}/*# sourceMappingURL=style.css.map */
